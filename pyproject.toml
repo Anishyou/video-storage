@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "video-storage"
+version = "0.1.0"
+description = ""
+authors = ["Anish <anish.goyal@tum.de>"]
+readme = "README.md"
+packages = [{ include = "app" }]
+# or remove the line above if you're not using a package structure
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.14"
+fastapi = "^0.111.0"
+uvicorn = "^0.29.0"
+pyyaml = "^6.0.1"
+python-multipart = "^0.0.9"
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"

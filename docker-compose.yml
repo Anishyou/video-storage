@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  video-storage:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: video-storage
+    ports:
+      - "8081:8081"
+    volumes:
+      - ./videos:/app/videos
+    environment:
+      - VIDEO_STORAGE_SECRET_TOKEN=your-secret-token
+    restart: unless-stopped

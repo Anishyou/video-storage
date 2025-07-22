@@ -1,0 +1,2 @@
+video-storage:
+  secret-token: "super-secret-token-123"
